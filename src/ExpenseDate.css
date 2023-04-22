@@ -1,0 +1,21 @@
+.button{
+    box-sizing: border-box;
+    height:70%;
+    width:inherit;
+    padding: 8px;
+    margin-left:60px;
+    background-color: rgb(53, 53, 135);   
+    position: relative;
+}
+.date{
+    position:absolute;
+    top:2px;
+    left:4px;
+    display:inline-block;
+    border: 2px groove yellowgreen;
+    border-radius: 11px;
+    width: fit-content;
+    padding: 4px;
+    background-color: rgb(19, 30, 108);
+    color: white;
+}

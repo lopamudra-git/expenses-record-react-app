@@ -1,0 +1,9 @@
+.expenses{
+    background-color: rgb(53, 52, 52);
+    background-origin: padding-box; 
+    margin: 20px;
+}
+h1{
+    text-align: center;
+    color: white;
+}
