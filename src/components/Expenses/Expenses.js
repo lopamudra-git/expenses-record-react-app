@@ -1,11 +1,13 @@
 import ExpenseItems from "./ExpenseItems";
 import "./Expenses.css";
-import Card from "./Card";
+import Card from "../UI/Card";
+import NewExpenses from "../NewExpenses/NewExpenses";
 export default function Expenses(props)
 {
 return(
     <Card className="expenses">
-        <h1>Here is your Expenses List!!</h1>
+        <NewExpenses/>
+        <h2>Here is your Expenses List!!</h2>
         {props.data.map((el)=>{
            return( <div id={el.id}>
             <ExpenseItems 

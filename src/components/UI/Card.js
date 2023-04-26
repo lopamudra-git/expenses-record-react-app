@@ -3,7 +3,8 @@ function Card(props)
 {
     const classes="card "+ props.className;
 return(
-    <div class={classes}>
+    // wrapper div
+    <div className={classes}>
 {props.children}
     </div>
 )
