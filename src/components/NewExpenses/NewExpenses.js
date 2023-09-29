@@ -1,15 +1,16 @@
 import ExpenseForm from "./ExpenseForm";
 import "./NewExpenses.css"
-const NewExpenses=()=>
+const NewExpenses=(props)=>
 {
     const expenseRecordHandler =(enteredExpenses)=>
     {
        const expenses={...enteredExpenses,
     id:Math.random().toString()}
+    props.onNewExpenseAdded(expenses);
     }
 return (
 <div className="newExpenses">
-<ExpenseForm collectExpenseRecord={expenseRecordHandler}/>
+<ExpenseForm onCollectExpenseRecord={expenseRecordHandler}/>
     </div>
 );
 }

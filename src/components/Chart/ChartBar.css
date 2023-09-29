@@ -1,0 +1,28 @@
+.chartBar{
+/* display: flex; */
+padding: 10px;
+justify-content: center;
+}
+.innerChartBar
+{
+position: relative;
+width: 20px;
+height: 80%;
+border-radius: 10px;
+border: 1px solid rgb(97, 67, 27);
+margin: 10px;
+}
+.innerChartBarfill
+{
+width: 100%;
+height: 50%;
+background-color: rgb(97, 67, 27);
+bottom: 0;
+position:absolute;
+border-radius: 12px;
+}
+.chartBarLevel{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: rgb(46, 16, 157);
+font-weight: bold;
+}

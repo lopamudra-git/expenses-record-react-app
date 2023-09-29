@@ -1,5 +1,6 @@
 .expense-field
 {
+    display: flex;
     float:left;
     align-items: center;
     width:40%;
@@ -13,14 +14,16 @@
     font-weight: bold;
 }
 .button {
-border: 2px solid red;
+    box-shadow: inset;
+border: 2px solid gray;
 }
 .submit{
     padding: auto;
     margin: auto;
     border-radius: 10px;
-    background-color: seagreen;
+    background-color: rgb(109, 110, 109);
     cursor: pointer;
+    width: inherit;
 }
 input[type="text"],input[type="date"]
 {

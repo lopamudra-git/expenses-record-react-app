@@ -9,7 +9,7 @@ const ExpenseForm = (props) => {
 
     function formatDate(date) {
            let month = '' + (date.getMonth() + 1),
-            day = '' + date.getDate(),
+            day = '' + (date.getDate()),
             year = date.getFullYear();
     
             month =  month.length < 2? ( '0' + month):month;
@@ -29,25 +29,26 @@ const ExpenseForm = (props) => {
     };
     const dateHandler = (event) => {
         setdate(event.target.value);
+        console.log("from date handler"+event.target.value);
+        console.log(date);
     };
     const formHandler = (event) => {
         event.preventDefault();
-        // console.log("submit");
         const setData = {
             title: title,
-            price: price,
-            date: new Date(date)
+            amount: price,
+            date: new Date(date)    
         };
-        props.collectExpenseRecord(setData);
+        console.log(date);
+        props.onCollectExpenseRecord(setData);
         setTitle('');
         setPrice('');
         setdate(currDate);
-        console.log(currDate);
     };
     return (
         <form onSubmit={formHandler}>
             <fieldset>
-                <legend>Expense form</legend>
+                <legend>Record your new expense</legend>
                 <div className="expense-field">
                     <label htmlFor="title">Title</label>
                     <input type="text" id="title" name="title" value={title} onChange={titleHandler} />
@@ -61,7 +62,7 @@ const ExpenseForm = (props) => {
                     <input type="date" id="date" name="date" value={date} onChange={dateHandler} />
                 </div>
                 <div className="expense-field expense_submit">
-                    <input className="button submit" type="submit" id="btn" name="btn" value="AddExpense" />
+                    <input className="button submit" type="submit" id="btn" name="btn" value="Add Expense" />
                     {/* <button className="button submit" type= "submit" id="submit"value="Submit">Submit</button> */}
                 </div>
 

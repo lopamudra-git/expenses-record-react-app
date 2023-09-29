@@ -1,0 +1,38 @@
+.yearFilter{
+    /* width:20px; */
+    padding:10px;
+    margin:10px;
+    background-color: rgb(44, 42, 42);
+    border-radius: 8px; 
+    height: 60px;
+    align-items: center;
+}
+
+.drpdwn{
+    display: block;
+    float:right;
+    position: relative;
+}
+.label{
+    float:left;
+    color: white;
+    width:max-content;
+    /* background-color: blueviolet; */
+    border-radius: 8px;
+    text-align: center;
+    margin-right: 10px;
+    display: block;
+}
+select:hover{
+    background-color: aquamarine;
+}
+select{
+    border-radius: 8px;
+    padding:10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: inherit;
+    font-weight: bold;
+}
+option{
+    padding: 10px;   
+}

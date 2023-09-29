@@ -11,6 +11,7 @@ export default function ExpenseItems(props)
         <div className="expenseItem price">
         <Card className="button">{props.price}</Card>
         </div>
+        
         </Card>
     )
 }
